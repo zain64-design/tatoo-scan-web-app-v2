@@ -1,0 +1,17 @@
+@use '../../utils' as *;
+
+.sec-gallery {
+    padding-top: clamp(40px,9vw,102px);
+    padding-bottom: clamp(60px,12vw,149px);
+    .head-area {
+        h4{
+            @include xlHeading(unset,12px);
+        }
+        h6 {
+            @include rgHeading(clamp(22px,2.5vw,32px),unset,normal,0)
+        }
+        p {
+            @include paraTwo(0,capitalize)
+        }
+    }
+}

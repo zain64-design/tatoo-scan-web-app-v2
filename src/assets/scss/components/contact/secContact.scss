@@ -1,0 +1,60 @@
+@use '../../utils' as *;
+
+.sec-contact {
+    overflow: visible;
+    margin-top: -10%;
+    z-index: 20;
+    padding-bottom: clamp(50px, 8vw, 100px);
+    .side-info {
+        .info-card {
+            // &:not(:last-child) {
+            //     margin-bottom: clamp(20px, 4vw, 50px);
+            // }
+
+            &:first-child {
+                box-shadow: 0px 32.956px 127.429px -17.576px rgba(211, 211, 211, 0.20);
+            }
+
+            background: $sec-bg;
+            border-radius: 16px;
+            padding: clamp(16px, 2vw, 26px);
+            border: none;
+            color: $white-clr;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-bottom: clamp(20px, 4vw, 50px);
+
+            .icon-area {
+                height: clamp(30px, 5vw, 60px);
+                width: clamp(30px, 5vw, 60px);
+                border-radius: 13px;
+                background: $prim-bg;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: $black-clr;
+                font-size: clamp(16px, 3vw, 30px);
+            }
+
+            .desc {
+                padding-left: 19px;
+
+                h6 {
+                    @include ctLb($lt-grey-clr-3, 16px);
+                }
+
+                a {
+                    font-family: $font-8;
+                    color: $white-clr;
+                    font-size: clamp(14px, 3vw, 18px);
+                }
+            }
+        }
+    }
+}
+
+@include respond-to('infinite-two') {
+    .sec-contact {
+        margin-top: -5%;
+    }
+  }

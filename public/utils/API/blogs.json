@@ -1,0 +1,74 @@
+[
+    {
+        "id":1,
+        "title": "Best tattoo designs studios in United States",
+        "thumbnail": "/images/blogs/blog1.png",
+        "authImg": "/images/blogs/author.png",
+        "authName": "James Mark",
+        "share": 60
+    },
+    {
+        "id":2,
+        "title": "Best tattoo designs studios in United States",
+        "thumbnail": "/images/blogs/blog2.png",
+        "authImg": "/images/blogs/author.png",
+        "authName": "James Mark",
+        "share": 60
+    },
+    {
+        "id":3,
+        "title": "Best tattoo designs studios in United States",
+        "thumbnail": "/images/blogs/blog1.png",
+        "authImg": "/images/blogs/author.png",
+        "authName": "James Mark",
+        "share": 60
+    },
+    {
+        "id":4,
+        "title": "Best tattoo designs studios in United States",
+        "thumbnail": "/images/blogs/blog3.png",
+        "authImg": "/images/blogs/author.png",
+        "authName": "James Mark",
+        "share": 60
+    },
+    {
+        "id":5,
+        "title": "Best tattoo designs studios in United States",
+        "thumbnail": "/images/blogs/blog4.png",
+        "authImg": "/images/blogs/author.png",
+        "authName": "James Mark",
+        "share": 60
+    },
+    {
+        "id":6,
+        "title": "Best tattoo designs studios in United States",
+        "thumbnail": "/images/blogs/blog5.png",
+        "authImg": "/images/blogs/author.png",
+        "authName": "James Mark",
+        "share": 60
+    },
+    {
+        "id":7,
+        "title": "Best tattoo designs studios in United States",
+        "thumbnail": "/images/blogs/blog1.png",
+        "authImg": "/images/blogs/author.png",
+        "authName": "James Mark",
+        "share": 60
+    },
+    {
+        "id":8,
+        "title": "Best tattoo designs studios in United States",
+        "thumbnail": "/images/blogs/blog6.png",
+        "authImg": "/images/blogs/author.png",
+        "authName": "James Mark",
+        "share": 60
+    },
+    {
+        "id":9,
+        "title": "Best tattoo designs studios in United States",
+        "thumbnail": "/images/blogs/blog7.png",
+        "authImg": "/images/blogs/author.png",
+        "authName": "James Mark",
+        "share": 60
+    }
+]

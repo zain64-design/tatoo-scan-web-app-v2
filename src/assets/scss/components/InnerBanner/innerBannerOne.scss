@@ -1,0 +1,38 @@
+@use '../../utils' as *;
+
+.sec-inner-banner {
+    @include innerBannerOne();
+    .desc {
+        .banner-heading {
+            @include bannerHead(0);
+        }
+        .blog-heading {
+            @include blogHead();
+        }
+        p {
+            @include bannerPara(clamp(10px,2vw,40px),0,center)
+        }
+        .author-area {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 10px;
+            flex-wrap: wrap;
+            .auth-ico {
+                height: 47px;
+                width: 47px;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 50%;
+            }
+            span {
+                font-family: $font-7;
+                font-size: clamp(16px, 2.5vw, 26px);
+                line-height: normal;
+                color: $lt-grey-clr-4;
+                text-transform: capitalize;
+                display: inline-flex;
+            }
+        }
+    }
+}

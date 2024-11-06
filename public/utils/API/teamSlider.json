@@ -1,0 +1,65 @@
+[
+    {
+        "id":1,
+        "image": "/images/about/tm1.svg",
+        "name": "Alex Brook",
+        "designation": "Cheif Executive Officer",
+        "desc": "Orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,"
+    },
+    {
+        "id":2,
+        "image": "/images/about/tm2.svg",
+        "name": "Alexa Brook",
+        "designation": "Cheif Executive Officer",
+        "desc": "Orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,"
+    },
+    {
+        "id":3,
+        "image": "/images/about/tm3.svg",
+        "name": "Danny Brook",
+        "designation": "Cheif Executive Officer",
+        "desc": "Orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,"
+    },
+    {
+        "id":4,
+        "image": "/images/about/tm1.svg",
+        "name": "Alex Brook",
+        "designation": "Cheif Executive Officer",
+        "desc": "Orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,"
+    },
+    {
+        "id":5,
+        "image": "/images/about/tm2.svg",
+        "name": "Alexa Brook",
+        "designation": "Cheif Executive Officer",
+        "desc": "Orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,"
+    },
+    {
+        "id":6,
+        "image": "/images/about/tm3.svg",
+        "name": "Danny Brook",
+        "designation": "Cheif Executive Officer",
+        "desc": "Orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,"
+    },
+    {
+        "id":7,
+        "image": "/images/about/tm1.svg",
+        "name": "Alex Brook",
+        "designation": "Cheif Executive Officer",
+        "desc": "Orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,"
+    },
+    {
+        "id":8,
+        "image": "/images/about/tm2.svg",
+        "name": "Alexa Brook",
+        "designation": "Cheif Executive Officer",
+        "desc": "Orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,"
+    },
+    {
+        "id":9,
+        "image": "/images/about/tm3.svg",
+        "name": "Danny Brook",
+        "designation": "Cheif Executive Officer",
+        "desc": "Orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,"
+    }
+]

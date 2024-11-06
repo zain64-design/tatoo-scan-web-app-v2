@@ -1,0 +1,55 @@
+@use '../../utils' as *;
+
+.sec-reward {
+    padding-top: 39px;
+    padding-bottom: clamp(40px, 5vw, 80px);
+    .cta-reward {
+        position: relative;
+        overflow: hidden;
+        border-radius: 24px;
+        padding-top: 50px;
+        padding-bottom: 60px;
+        padding-left: 50px;
+        padding-right: 50px;
+        background-image: linear-gradient(90deg, $black-bg 0%, $black-bg 100%),linear-gradient(140deg, rgba(224,170,59,1) 0%, rgba(255,255,255,0) 90%);
+        background-clip: padding-box, border-box;
+        background-origin: border-box;
+        border: 1px solid transparent;
+        z-index: 10;
+		&::before {
+			content: '';
+			display: block;
+			position: absolute;
+            top: -28%;
+            left: -8%;
+			z-index: -1;
+			width: 100%;
+			max-width: 410px;
+			height: 410px;
+			background: $prim-bg-2;
+            opacity: 80%;
+			border-radius: 50%;
+			filter: blur(267px);
+		}
+        .head-area {
+            h4 {
+                @include xxlHeading(clamp(24px, 4vw, 48px), capitalize, normal, clamp(25px,4vw,57px), 0px);
+                text-align: center;
+            }
+        }
+        .award-slider {
+            .swiper-wrapper {
+                .swiper-slide {
+                    img {
+                        align-content: center;
+                        display: block;
+                        margin: 0 auto;
+                        min-height: 179px;
+                        object-fit: contain;
+                        object-position: center;
+                    }
+                }
+            }
+        }
+    }
+}

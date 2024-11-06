@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "image": "/images/about/about-img-1.jpg",
+        "desc": [
+            {
+                "id":1,
+                "head": "Our Vision",
+                "para": "We want to see a world where tattoos are loved not just for their look but for the incredible stories and emotions they hold. Our vision is to change how people interact with their ink by mixing art and tech in a way that feels personal and meaningful. By building a vibrant community of artists and tattoo enthusiasts, we’re here to make every tattoo a living part of your journey, making every tattoo more than just a cool design."
+            },
+            {
+                "id":2,
+                "head": "Our Mission",
+                "para": "We aim to empower you and artists by turning tattoos into engaging and lively experiences that share your story. Our mission is to create cool innovative tools that let you dig into the memories and meanings behind your ink, while giving artists a stage to show off their skills and reach more fans. At TattooScan, we’re dedicated to expanding self-expression and creativity."
+            }
+        ]
+    }
+]

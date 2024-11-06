@@ -1,0 +1,73 @@
+@use '../../utils' as *;
+.sec-home-banner {
+    .img-main {
+		.back-img {
+			left: 8% !important;
+			.thumb3 {
+			}
+		}
+		.front-img-one {
+			.thumb1 {
+				margin: 0 auto 0 120px;
+			}
+		}
+		.front-img-two {
+			top: -8% !important;
+			.thumb2 {
+			}
+		}
+	}
+}
+
+
+@include respond-to('tiny') {
+    .sec-home-banner {
+        .img-main {
+			margin-top: 20px;
+            .back-img {
+                left: 0 !important;
+            }
+			.front-img-two {
+				top: 0 !important;
+			}
+			.front-img-one {
+				.thumb1 {
+					margin: 0 auto 0 70px;
+				}
+			}
+        }
+    }
+  }
+
+  @include respond-to('sm') {
+    .sec-home-banner {
+        .img-main {
+			margin-top: 20px;
+            .back-img {
+                left: 0 !important;
+            }
+			.front-img-two {
+				top: 0 !important;
+			}
+			.front-img-one {
+				.thumb1 {
+					margin: 0 auto 0 70px;
+				}
+			}
+        }
+    }
+  }
+
+  @include respond-to('md') {
+    .sec-home-banner {
+        .img-main {
+			margin-top: 20px;
+            .back-img {
+                left: 0 !important;
+            }
+			.front-img-two {
+				top: 0 !important;
+			}
+        }
+    }
+  }

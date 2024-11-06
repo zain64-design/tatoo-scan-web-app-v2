@@ -1,0 +1,44 @@
+[
+    {
+        "id":1,
+        "title": "See Your Tattoos in a Whole New Light",
+        "thumbnail": "/images/services/ser-1.webp",
+        "icon": "/images/services/ser-icon-1.png",
+        "desc": "Tattoos are memories and messages that deserve to shine. With TattooScan, you can bring your ink to life. Deepen your connection with your art or an artist wanting to reach out to clients. Grab the app and discover the hidden stories behind your tattoos today!"
+    },
+    {
+        "id":2,
+        "title": "Interactive Tattoo Scanning",
+        "thumbnail": "/images/services/ser-2.webp",
+        "icon": "/images/services/ser-icon-2.png",
+        "desc": "Turn your tattoos into stories! Just scan your ink and watch as it connects to videos, audio messages, and fun details. Scan your ink with the app and unlock a whole new way to relive memories, share stories, and dig deeper into what your tattoo means to you."
+    },
+    {
+        "id":3,
+        "title": "So Much More TattooScan Can Do",
+        "thumbnail": "/images/services/ser-3.webp",
+        "icon": "/images/services/ser-icon-3.png",
+        "desc": "TattooScan is your go-to tool for taking your tattoo game to the next level. Either you want to connect with artists or bring your ink’s story to life, TattooScan is here to enhance every part of your tattoo experience. Check out the features that make it the ultimate platform for tattoo lovers and artists."
+    },
+    {
+        "id":4,
+        "title": "Artist Showcase & Discovery",
+        "thumbnail": "/images/services/ser-4.webp",
+        "icon": "/images/services/ser-icon-4.png",
+        "desc": "Browse through a global gallery of artists and studios. Find inspiration, check out portfolios, and connect with your next artist. While artists can build profiles, show off their styles, handle bookings, and connect directly with clients making it easy to get discovered."
+    },
+    {
+        "id":5,
+        "title": "Tattoo Stories & Details",
+        "thumbnail": "/images/services/ser-5.webp",
+        "icon": "/images/services/ser-icon-5.png",
+        "desc": "TattooScan is your go-to tool for taking your tattoo game to the next level. Either you want to connect with artists or bring your ink’s story to life, TattooScan is here to enhance every part of your tattoo experience. Check out the features that make it the ultimate platform for tattoo lovers and artists."
+    },
+    {
+        "id":6,
+        "title": "Join the Tattoo Community",
+        "thumbnail": "/images/services/ser-6.webp",
+        "icon": "/images/services/ser-icon-6.png",
+        "desc": "Discover trends, share your stories, and talk about everything tattoo-related with people who get it. This way you can stay in the loop on events, conventions, and the latest buzz in the tattoo world."
+    }
+]

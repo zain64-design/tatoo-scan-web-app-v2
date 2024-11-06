@@ -1,0 +1,54 @@
+@use '../../utils' as *;
+
+@keyframes l3 {
+	0% {
+		inset: 0 35px 0 0;
+	}
+	50% {
+		inset: 0 0 0 0;
+	}
+	100% {
+		inset: 0 0 0 35px;
+	}
+}
+@keyframes l2 {
+	100% {
+		box-shadow: 0 0 0 40px #0000;
+	}
+}
+.loader-wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	// opacity: 0;
+	position: relative;
+.loader-inner {
+	width: 20px;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	background: #000;
+	box-shadow: 0 0 0 0 $prim-bg-2;
+	animation: l2 1.5s infinite linear;
+	position: relative;
+	&:before {
+		content: "";
+		position: absolute;
+		inset: 0;
+		border-radius: inherit;
+		box-shadow: 0 0 0 0 $prim-bg-2;
+		animation: inherit;
+		animation-delay: -0.5s;
+	}
+	&:after {
+		content: "";
+		position: absolute;
+		inset: 0;
+		border-radius: inherit;
+		box-shadow: 0 0 0 0 $prim-bg-2;
+		animation: inherit;
+		animation-delay: -0.5s;
+		animation-delay: -1s;
+	}
+}
+}

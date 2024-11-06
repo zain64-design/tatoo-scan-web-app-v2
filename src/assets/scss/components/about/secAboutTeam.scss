@@ -1,0 +1,181 @@
+@use '../../utils' as *;
+
+.sec-our-team {
+    padding-top: clamp(40px, 5vw, 90px);
+    padding-bottom: clamp(40px, 5vw, 90px);
+    z-index: 10;
+    overflow: visible;
+    .bg-elem {
+		position: relative;
+		&::before {
+			content: '';
+			display: block;
+			position: absolute;
+            top: 29%;
+            left: -8%;
+			z-index: -2;
+			width: 100%;
+			max-width: 374px;
+			height: 374px;
+			background: $prim-bg-2;
+            opacity: 60%;
+			border-radius: 50%;
+			filter: blur(250px);
+		}
+		&::after {
+			content: '';
+			display: block;
+			position: absolute;
+            top: 40%;
+            left: -67px;
+			z-index: -1;
+			width: 100%;
+			max-width: 285px;
+			height: 285px;
+			background: $prim-bg-2;
+            opacity: 0.6;
+			border-radius: 50%;
+			filter: blur(267px);
+		}
+	}
+    .head-area {
+        h3 {
+            @include xxlHeading(clamp(24px, 4vw, 48px), capitalize, normal, clamp(25px,4vw,57px), 0px);
+            text-align: center;
+        }
+    }
+    // for swiper
+    .team-details {
+        .swiper-slide {
+            .desc {
+                h4 {
+                    @include xxlHeading(clamp(24px, 4vw, 48px), capitalize, normal, clamp(6px,1vw,12px), -1px);
+                }
+                h6 {
+                    @include subHeading(clamp(16px,1.5vw,24px),clamp(15px,2.5vw,31px),capitalize,-0.1px);
+                }
+                p{
+                    @include bannerPara(0,0,left);
+                }
+            }
+        }
+    }
+    // for slick
+    // .team-details {
+    //     .slick-list {
+    //         .slick-track {
+    //             .slick-slide {
+    //                 .desc {
+    //                     h4 {
+    //                         @include xxlHeading(clamp(24px, 4vw, 48px), capitalize, normal, clamp(6px,1vw,12px), -1px);
+    //                     }
+    //                     h6 {
+    //                         @include subHeading(clamp(16px,1.5vw,24px),clamp(15px,2.5vw,31px),capitalize,-0.1px);
+    //                     }
+    //                     p{
+    //                         @include bannerPara(0,0,left);
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+    .btn-flex {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 31px;
+        margin-top: clamp(20px,4vw,45px);
+        .swiper-button-prev,.swiper-button-next {
+            position: relative;
+            top: auto;
+            left: auto;
+            right: auto;
+            color: $white-clr;
+            margin-top: 0;
+            height: clamp(26px,5vw,56px);
+            width: clamp(26px,5vw,56px);
+            font-size: clamp(20px,2vw,30px);
+            border: 2px solid $white-clr;
+            border-radius: 50%;
+            svg {
+                height: auto;
+                width: auto;
+            }
+            &::after {
+                display: none;
+            }
+        }
+    }
+    // for swiper
+    .slider-main {
+        .team-slider {
+            .swiper-wrapper {
+                .swiper-slide {
+                    img {
+                        object-fit: cover;
+                        object-position: center;
+                        transition: all 0.3s ease-in-out;
+                        transform: scale(0.89);
+                        border-radius: 20px;
+                        width: 100%;
+                        height: auto;
+                        margin: 0 auto;
+                        display: block;
+                    }
+                    &.swiper-slide-active {
+                        margin-left: 20px;
+                        margin-right: 20px !important;
+                        img {
+                            transform: scale(1);
+                        }
+                    }
+                }
+            }
+        }           
+    }
+    // for slick
+    // .slider-main {
+    //     .team-slider {
+    //         .slick-list {
+    //             .slick-track {
+    //                 .slick-slide {
+    //                     &>div {
+    //                         transition: all 0.3s ease-in-out;
+    //                         img {
+    //                             object-fit: cover;
+    //                             object-position: center;
+    //                             transition: all 0.3s ease-in-out;
+    //                             transform: scale(0.89);
+    //                             border-radius: 20px;
+    //                             width: 100%;
+    //                             height: auto;
+    //                             margin: 0 auto;
+    //                             display: block;
+    //                         }
+    //                     }
+    //                     &.slick-active {
+    //                         &.slick-current {
+    //                             // margin-inline: 20px;
+    //                         &>div {
+    //                             img {
+    //                                 transform: scale(1);
+    //                             }
+    //                         }
+    //                         }
+    //                     }
+    //                 } 
+    //             }
+    //         }             
+    //     }       
+    // }
+}
+
+
+@include respond-to('infinite') {
+    .sec-our-team {
+		max-width: 2000px;
+        margin: 0 auto;
+    }
+  }

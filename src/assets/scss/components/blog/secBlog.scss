@@ -1,0 +1,161 @@
+@use '../../utils' as *;
+
+.sec-blog {
+    overflow: visible;
+    margin-top: -7%;
+    z-index: 20;
+    padding-bottom: clamp(30px, 5vw, 60px);
+    .blog-card {
+        background: $sec-bg-2;
+        border: none;
+        border-radius: 16px;
+        padding: 16px;
+        margin-bottom: 24px;
+        .blog-img {
+            object-fit: cover;
+            object-position: center;
+            height: clamp(120px,18vw,222px);
+            width: 100%;
+            margin: 0 auto;
+            display: block;
+            border-radius: 12px;
+        }
+        .desc {
+            h6 {
+                font-family: $font-11;
+                color: $white-clr;
+                font-size: clamp(16px, 3vw, 20px);
+                line-height: clamp(25px,4vw, 30px);
+                letter-spacing: -0.6px;
+                margin-top: clamp(10px,2vw,20px);
+                margin-bottom: 10px;
+            }
+            .author-area {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 8px;
+                flex-wrap: wrap;
+                .auth-ico {
+                    height: 36px;
+                    width: 36px;
+                    object-fit: cover;
+                    object-position: center;
+                    border-radius: 50%;
+                }
+                span {
+                    font-family: $font-7;
+                    font-size: clamp(16px, 2.3vw, 20px);
+                    line-height: normal;
+                    color: $lt-grey-clr-4;
+                    text-transform: capitalize;
+                    display: inline-flex;
+                }
+            }
+            .btm-area {
+                gap: 21px;
+                margin-top: 23px;
+                .shares {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 4px;
+                    border-radius: 100px;
+                    border: 1px solid $sec-clr-2;
+                    background: $sec-bg-4;
+                    height: clamp(33px,4vw,43px);
+                    width: clamp(60px,7vw,80px);
+                    font-family: $font-12;
+                    color: $lt-grey-clr-4;
+                    .icon {
+                        height: 19px;
+                        width: auto;
+                        object-fit: contain;
+                        object-position: center;
+                    }
+                }
+                .read-btn {
+                    @include buttonTwo(clamp(40px, 7vw, 63px),clamp(160px, 16vw, 227px),clamp(16px, 3vw, 20px),0);
+                    gap: 10px;
+                    svg {
+                        color: $prim-clr;
+                        font-size: clamp(16px,2vw,23px);
+                        transition: all 0.5s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+    .pagination-wrap {
+        margin-top: 40px;
+        &>span {
+            font-family: $font-7;
+            font-size: clamp(16px,3vw,22px);
+            line-height: normal;
+            text-transform: capitalize;
+            color: $prim-clr;
+        }
+    }
+    .pagination {
+        gap: 13.75px;
+            .page-item {
+                .page-link {
+                    border-radius: 5.5px;
+                    background: transparent;
+                    border-color: $prim-clr;
+                    width: 33px;
+                    height: 33px;
+                    padding: 2px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-family: $font-7;
+                    font-size: clamp(16px,3vw,22px);
+                    line-height: normal;
+                    text-transform: capitalize;
+                    color: $prim-clr;
+                    &:hover {
+                        background: $prim-bg;
+                        color: $black-clr;  
+                    }
+                    &:focus {
+                        outline: none;
+                        box-shadow: none;
+                    }
+                    &>span {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+                &:last-child {
+                    .page-link {
+                        border: none;
+                    }
+                }
+                &.active {
+                    .page-link {
+                        background: $prim-bg;
+                        color: $black-clr;
+                    }
+                }
+            }
+    }
+}
+
+@include respond-to('infinite') {
+    .sec-blog {
+        margin-top: -5%;
+    }
+  }
+
+  @include respond-to('tiny') {
+    .sec-blog {
+        margin-top: -5%;
+        .blog-card {
+            .blog-img {
+                height: 280px;
+            }
+        }
+    }
+  }

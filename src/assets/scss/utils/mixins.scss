@@ -1,0 +1,408 @@
+@use './fonts.scss' as *;
+@use './variables.scss' as *;
+
+@mixin xxlHeading($font-size, $text-transform, $line-height, $margin-bottom, $letter-spacing) {
+    font-family: $font-6;
+    font-size: $font-size;
+    text-transform: $text-transform;
+    line-height: $line-height;
+    color: $white-clr;
+    margin-bottom: $margin-bottom;
+    letter-spacing: $letter-spacing;
+}
+
+@mixin xlHeading($text-transform, $margin-bottom) {
+    font-family: $font-5;
+    font-size: clamp(24px, 4vw, 48px);
+    text-transform: $text-transform;
+    line-height: clamp(30px, 5vw, 52px);
+    color: $white-clr;
+    margin-bottom: $margin-bottom;
+}
+
+@mixin smHeading($text-transform, $margin-bottom) {
+    font-family: $font-5;
+    font-size: clamp(16px, 1vw, 18px);
+    text-transform: $text-transform;
+    line-height: normal;
+    color: $white-clr;
+    margin-bottom: $margin-bottom;
+}
+
+@mixin xsHeading($font-size, $line-height, $margin-bottom) {
+    font-family: $font-5;
+    font-size: $font-size;
+    text-transform: capitalize;
+    line-height: $line-height;
+    color: $white-clr;
+    margin-bottom: $margin-bottom;
+    letter-spacing: 0.1px;
+}
+
+@mixin subHeading($font-size, $margin-bottom, $text-transform, $letter-spacing) {
+    font-family: $font-4;
+    font-size: $font-size;
+    line-height: normal;
+    margin-bottom: $margin-bottom;
+    color: $prim-clr-2;
+    text-transform: $text-transform;
+    letter-spacing: $letter-spacing;
+}
+
+@mixin subHeadingTwo($font-size, $margin-bottom, $text-transform) {
+    font-family: $font-3;
+    font-size: $font-size;
+    line-height: normal;
+    margin-bottom: $margin-bottom;
+    color: $white-clr;
+    text-transform: $text-transform;
+}
+
+@mixin rgHeading($font-size, $text-transform, $line-height, $margin-bottom) {
+    font-family: $font-3;
+    font-size: $font-size;
+    text-transform: $text-transform;
+    line-height: $line-height;
+    color: $white-clr;
+    margin-bottom: $margin-bottom;
+    letter-spacing: 0.2px;
+}
+
+@mixin blogHeading($margin) {
+    font-family: $font-6;
+    font-size: clamp(16px, 2vw, 24px);
+    text-transform: capitalize;
+    line-height: normal;
+    color: $white-clr;
+    margin: $margin;
+}
+
+@mixin commentHeading($margin) {
+    font-family: $font-3;
+    font-size: clamp(16px, 1vw, 18px);
+    text-transform: capitalize;
+    line-height: normal;
+    color: $white-clr;
+    margin: $margin;
+}
+
+@mixin dateHeading($margin) {
+    font-family: $font-6;
+    font-size: clamp(22px, 3vw, 36px);
+    text-transform: capitalize;
+    line-height: normal;
+    color: $white-clr;
+    margin: $margin;
+}
+
+@mixin servicesHeading($font-family, $margin-bottom) {
+    font-family: $font-family;
+    font-size: clamp(22px, 4vw, 40px);
+    text-transform: capitalize;
+    line-height: normal;
+    color: $white-clr;
+    margin-bottom: $margin-bottom;
+    text-align: center;
+}
+
+@mixin servicesHeading($font-family, $margin-bottom) {
+    font-family: $font-family;
+    font-size: clamp(22px, 4vw, 40px);
+    text-transform: capitalize;
+    line-height: normal;
+    color: $white-clr;
+    margin-bottom: $margin-bottom;
+    text-align: center;
+}
+
+@mixin serCardHead($margin-bottom, $text-align) {
+    font-family: $font-5;
+    font-size: clamp(18px, 3vw, 23px);
+    text-transform: capitalize;
+    line-height: clamp(24px, 3.5vw, 28px);
+    color: $white-clr;
+    margin-bottom: $margin-bottom;
+    text-align: $text-align;
+}
+
+@mixin paraOne($font-family, $margin, $color, $text-transform) {
+    font-family: $font-family;
+    font-size: clamp(16px, 1.5vw, 18px);
+    line-height: clamp(22px, 3vw, 28px);
+    margin: $margin;
+    color: $color;
+    text-transform: $text-transform;
+}
+
+@mixin paraTwo($margin, $text-transform) {
+    font-family: $font-4;
+    font-size: clamp(14px, 1.5vw, 18px);
+    line-height: clamp(24px, 3vw, 36px);
+    margin: $margin;
+    color: $lt-grey-clr;
+    text-transform: $text-transform;
+    letter-spacing: -0.1px;
+}
+
+@mixin paraThree($margin, $color, $font-size, $line-height, $text-transform, $letter-spacing) {
+    font-family: $font-3;
+    font-size: $font-size;
+    line-height: $line-height;
+    margin: $margin;
+    color: $color;
+    text-transform: $text-transform;
+    letter-spacing: $letter-spacing;
+}
+
+@mixin paraFour($font-family, $margin) {
+    font-family: $font-family;
+    font-size: clamp(14px, 1.5vw, 18px);
+    line-height: clamp(24px, 4vw, 48px);
+    margin: $margin;
+    color: $white-clr;
+}
+
+@mixin buttonOne($height, $width, $font-family, $font-size, $margin) {
+    color: $white-clr;
+    height: $height;
+    width: $width;
+    font-family: $font-family;
+    font-size: $font-size;
+    text-transform: capitalize;
+    margin: $margin;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: $gradient-1;
+    background-size: 130%;
+    transition: all 0.5s ease-in-out;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+
+    &:hover {
+        background-position: center;
+        background-size: 500%;
+        color: $white-clr;
+    }
+}
+
+
+@mixin buttonTwo($height, $width, $font-size, $margin) {
+    color: $lt-grey-clr-4;
+    height: $height;
+    width: $width;
+    font-family: $font-7;
+    font-size: $font-size;
+    text-transform: capitalize;
+    margin: $margin;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $prim-clr;
+    background: $sec-bg-3;
+    transition: all 0.5s ease-in-out;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background: $gradient-1;
+        background-size: 130%;
+        transition: all 0.5s ease-in-out;
+        z-index: -1;
+        opacity: 0;
+    }
+
+    &:hover {
+        color: $white-clr;
+        border-color: transparent;
+
+        svg {
+            color: $white-clr;
+        }
+
+        &::before {
+            opacity: 1;
+        }
+    }
+}
+
+@mixin innerBannerOne() {
+    position: relative;
+    overflow: hidden;
+    // padding-bottom: clamp(50px, 13vw, 165px);
+    padding-top: clamp(80px, 17vw, 196px);
+    height: clamp(380px, 50vw, 554px);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 10;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(0deg, $black-bg 0%, $black-bg-4 50%, rgba(0, 0, 0, 1) 100%);
+        z-index: -1;
+    }
+}
+
+@mixin bannerHead($margin-bottom) {
+    font-family: $font-6;
+    font-size: clamp(24px, 5vw, 64px);
+    text-transform: capitalize;
+    line-height: clamp(30px, 6vw, 72px);
+    color: $white-clr;
+    margin-bottom: $margin-bottom;
+    text-align: center;
+}
+
+@mixin bannerPara($margin-top, $margin-bottom, $text-align) {
+    font-family: $font-3;
+    font-size: clamp(12px, 1.5vw, 18px);
+    line-height: clamp(20px, 3vw, 36px);
+    margin-top: $margin-top;
+    margin-bottom: $margin-bottom;
+    text-transform: capitalize;
+    color: $white-clr;
+    opacity: 0.5;
+    letter-spacing: -0.1px;
+    text-align: $text-align;
+}
+
+@mixin blogHead() {
+    font-family: $font-13;
+    font-size: clamp(24px, 5vw, 48px);
+    text-transform: capitalize;
+    line-height: clamp(30px, 6vw, 72px);
+    color: $white-clr;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+@mixin ctLb($color, $margin-bottom) {
+    font-family: $font-7;
+    font-size: clamp(14px, 1.5vw, 17px);
+    text-transform: capitalize;
+    line-height: normal;
+    color: $color;
+    margin-bottom: $margin-bottom;
+}
+
+@mixin playBtn ($height,$width,$background) {
+    align-self: center;
+    position: absolute;
+    // top: 0;
+    // left: 0;
+    // right: 0;
+    // bottom: 0;
+    margin: 0 auto;
+    height: $height;
+    width: $width;
+    border-radius: 50%;
+    background: $background;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+@mixin playIcon ($font-size) {
+    font-size: $font-size;
+    color: $black-bg;
+    margin: 0 0 0 5px;
+}
+
+@mixin respond-to($breakpoint) {
+    @if $breakpoint == 'infinite-two' {
+        @media only screen and (min-width: $breakpoint-infinite-two) {
+            @content;
+        }
+    }
+    @if $breakpoint == 'infinite' {
+        @media only screen and (min-width: $breakpoint-infinite) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == 'four-xxl' {
+        @media only screen and (min-width: $breakpoint-four-xxl) and (max-width: $breakpoint-infinite) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == 'two-xxl' {
+        @media only screen and (min-width: $breakpoint-two-xxl) and (max-width: 1599px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == 'xxl' {
+        @media only screen and (min-width: $breakpoint-xxl) and (max-width: 1444px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == 'xl' {
+        @media only screen and (min-width: $breakpoint-xl) and (max-width: 1399px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == 'lg' {
+        @media only screen and (min-width: $breakpoint-lg) and (max-width: 1199px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == 'md' {
+        @media only screen and (min-width: $breakpoint-md) and (max-width: 991px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == 'sm' {
+        @media only screen and (min-width: $breakpoint-sm) and (max-width: 767px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == 'tiny' {
+        @media only screen and (min-width: $breakpoint-tiny) and (max-width: 575px) {
+            @content;
+        }
+    }
+}
+
+// @mixin respond-to($breakpoint) {
+//     @if $breakpoint == sm {
+//         @media (max-width: $breakpoint-sm) { @content; }
+//     } @else if $breakpoint == md {
+//         @media (max-width: $breakpoint-md) { @content; }
+//     } @else if $breakpoint == lg {
+//         @media (max-width: $breakpoint-lg) { @content; }
+//     } @else if $breakpoint == xl {
+//         @media (max-width: $breakpoint-xl) { @content; }
+//     } @else if $breakpoint == xxl {
+//         @media (max-width: $breakpoint-xxl) { @content; }
+//     }
+// }

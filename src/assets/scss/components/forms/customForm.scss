@@ -1,0 +1,126 @@
+@use '../../utils' as *;
+.form-main {
+    .input-field {
+        position: relative;
+        padding-bottom: 24px;
+        label {
+            @include ctLb($white-clr, 8);
+        }
+        small {
+            color: #821131;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            font-family: $font-9;
+            display: flex;
+            align-items: center;
+        }
+        input {
+            border: none;
+            box-shadow: inset 0 0 0 0.2px $border-clr;
+            border-radius: 8px;
+            background: $sec-bg;
+            height: 62px;
+            padding: 18px 16px;
+            font-family: $font-7;
+            color: $white-clr;
+            font-size: 17px;
+            line-height: normal;
+            letter-spacing: 0.141px;
+
+            &::-webkit-input-placeholder {
+                /* Chrome/Opera/Safari */
+                font-family: $font-10;
+                font-size: 17px;
+                opacity: 0.5;
+                color: $white-clr;
+                letter-spacing: 1px;
+                text-transform: capitalize;
+            }
+
+            &::-moz-placeholder {
+                /* Firefox 19+ */
+                font-family: $font-10;
+                font-size: 17px;
+                opacity: 0.5;
+                color: $white-clr;
+                letter-spacing: 1px;
+                text-transform: capitalize;
+            }
+
+            &:-ms-input-placeholder {
+                /* IE 10+ */
+                font-family: $font-10;
+                font-size: 17px;
+                opacity: 0.5;
+                color: $white-clr;
+                letter-spacing: 1px;
+                text-transform: capitalize;
+            }
+
+            &:-moz-placeholder {
+                /* Firefox 18- */
+                font-family: $font-10;
+                font-size: 17px;
+                opacity: 0.5;
+                color: $white-clr;
+                letter-spacing: 1px;
+                text-transform: capitalize;
+            }
+        }
+        textarea {
+            border: none;
+            box-shadow: inset 0 0 0 0.2px $border-clr;
+            border-radius: 8px;
+            background: $sec-bg;
+            padding: 16px 24px;
+            font-family: $font-7;
+            color: $white-clr;
+            font-size: 17px;
+            line-height: normal;
+            letter-spacing: 0.141px;
+            &::-webkit-input-placeholder {
+                /* Chrome/Opera/Safari */
+                font-family: $font-10;
+                font-size: 17px;
+                opacity: 0.5;
+                color: $white-clr;
+                letter-spacing: 1px;
+                text-transform: capitalize;
+            }
+
+            &::-moz-placeholder {
+                /* Firefox 19+ */
+                font-family: $font-10;
+                font-size: 17px;
+                opacity: 0.5;
+                color: $white-clr;
+                letter-spacing: 1px;
+                text-transform: capitalize;
+            }
+
+            &:-ms-input-placeholder {
+                /* IE 10+ */
+                font-family: $font-10;
+                font-size: 17px;
+                opacity: 0.5;
+                color: $white-clr;
+                letter-spacing: 1px;
+                text-transform: capitalize;
+            }
+
+            &:-moz-placeholder {
+                /* Firefox 18- */
+                font-family: $font-10;
+                font-size: 17px;
+                opacity: 0.5;
+                color: $white-clr;
+                letter-spacing: 1px;
+                text-transform: capitalize;
+            }
+        }
+    }
+    .submit-btn {
+        @include buttonOne(clamp(45px,5vw,58px),100%,$font-4,clamp(16px, 1vw, 20px),12px 0 0 0);
+    }
+}

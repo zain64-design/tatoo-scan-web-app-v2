@@ -1,0 +1,57 @@
+@use '../../utils' as *;
+.sec-cta-two {
+	z-index: 2;
+	padding-top: clamp(40px,5vw,70px);
+	padding-bottom: clamp(40px,5vw,70px);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 940px;
+    &::before {
+        content: '';
+        position: absolute;
+        top:0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(90deg, $black-bg 55%, $black-bg-2 70%, $black-bg-3 100%);
+        z-index: -1;
+    }
+    .desc {
+        h4 {
+            @include xlHeading(unset,30px);
+        }
+        p {
+            @include paraTwo(0 0 7px 0,capitalize)
+        }
+        .btn-contact {
+            @include buttonOne(clamp(45px,5vw,57px),clamp(180px,14vw,217px),$font-4,clamp(16px, 1vw, 20px),40px 0 0 0);
+            svg {
+                font-size: clamp(14px,1.5vw,21px);
+                position: absolute;
+                display: inline-flex;
+                right: 27px;
+            }
+        }
+    }
+}
+
+@include respond-to('infinite') {
+    .sec-cta-two {
+		max-width: 2000px;
+        margin: 0 auto;
+        &::after {
+            content: '';
+            position: absolute;
+            top:0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(90deg, rgb(0 0 0 / 0%) 99%, $black-bg 100%);
+            z-index: -1;
+        }
+    }
+  }

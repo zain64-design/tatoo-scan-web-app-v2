@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "image": "/images/home/vd-gl-1.png",
+        "head": "Ink-spired Community",
+        "link": "https://www.youtube.com/watch?v=GJAsS6FoOWo"
+    },
+    {
+        "id": 2,
+        "image": "/images/home/vd-gl-2.png",
+        "head": "Lorem ipsum dummy text",
+        "link": "https://www.youtube.com/watch?v=TP8N1a-edBE"
+    }
+]

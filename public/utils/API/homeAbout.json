@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "image": "images/home/abt-icon-1.png",
+        "head": "Get the Inside Scoop",
+        "desc": "Our app lets you peek into the world of tattoo pros. Check out their work, get tips, and see what makes their art tick."
+    },
+    {
+        "id": 2,
+        "image": "images/home/abt-icon-2.png",
+        "head": "Monetize Your Passion",
+        "desc": "Look at our freemium models, in-app purchases, advertisements, and partnerships with tattoo artists and turn your love for ink into a sustainable business."
+    },
+    {
+        "id": 3,
+        "image": "images/home/abt-icon-3.png",
+        "head": "Join a Community",
+        "desc": "Show off your tattoos, share your stories, and meet others who get it. It is like hanging out with friends who love tattoos just as much as you do."
+    }
+]

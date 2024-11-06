@@ -1,0 +1,127 @@
+@use '../../utils' as *;
+
+.sec-cta-three {
+	padding-bottom: clamp(40px,4vw,77px);
+	.ct-bg {
+		content: '';
+		position: absolute;
+		top: -36%;
+		left: -8%;
+		background: $prim-bg-2;
+		height: 410px;
+		width: 410px;
+		border-radius: 50%;
+		opacity: 0.8;
+		filter: blur(267.5561828613281px);
+		z-index: -1;
+	}
+	.cta-area {
+		background: $black-bg;
+		z-index: 2;
+		padding-top: clamp(30px,9vw,108px);
+		padding-bottom: clamp(30px,10vw,120px);
+		padding-left: 40px;
+		background-repeat: no-repeat;
+		background-position: top right;
+		background-size: 600px;
+		border-radius: 24px;
+		position: relative;
+		overflow: hidden;
+		&::before {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			background: url(/images/home/cta-elem-1.png) center/contain no-repeat;
+			height: 110px;
+			width: 213px;		
+			z-index: -1;
+		}
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			background: url(/images/home/cta-elem-2.png) center/contain no-repeat;
+			height: 71px;
+			width: 82px;
+			z-index: -1;
+		}
+	}
+    .desc {
+        h4 {
+            @include xxlHeading(clamp(22px,4vw,42px),capitalize,clamp(28px,4.2vw,48px),clamp(8px,1vw,16px),normal)
+        }
+        p {
+            @include paraOne($font-3,0,$white-clr,unset);
+        }
+    }
+    .btn-flex {
+		margin: 30px 0 0 0;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		.links {
+			&:last-child {
+				margin-left: 18px;
+			}
+		}
+	}
+}
+
+@include respond-to('tiny') {
+    .sec-cta-three {
+		.ct-bg {
+			opacity: 0.9;
+			filter: blur(50px);
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			height: 100%;
+			width: 100%;
+		}
+		.cta-area {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+    }
+  }
+
+  @include respond-to('sm') {
+    .sec-cta-three {
+		.ct-bg {
+			opacity: 0.9;
+			filter: blur(50px);
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			height: 100%;
+			width: 100%;
+		}
+		.cta-area {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+    }
+  }
+
+  @include respond-to('md') {
+    .sec-cta-three {
+		.ct-bg {
+			opacity: 0.9;
+			filter: blur(50px);
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			height: 100%;
+			width: 100%;
+		}
+		.cta-area {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+    }
+  }
